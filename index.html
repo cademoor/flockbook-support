@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flockbook</title>
+  <meta name="description" content="Support and privacy for Flockbook, a flock book that stays on your phone.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #F3EEE6;
+      --card: #FFFFFF;
+      --text: #1C1917;
+      --muted: #625C56;
+      --line: #E6DFD4;
+      --green: #1E4D3C;
+      --yolk: #C4962C;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 3.5rem 1.25rem 4rem;
+    }
+    .mark {
+      width: 4.5rem;
+      height: 5.4rem;
+      margin: 0 0 1.5rem;
+      background: var(--green);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      position: relative;
+    }
+    .mark::after {
+      content: "";
+      position: absolute;
+      width: 1.7rem;
+      height: 1.7rem;
+      left: 1.4rem;
+      top: 2.15rem;
+      background: var(--yolk);
+      border-radius: 50%;
+    }
+    h1 {
+      margin: 0 0 0.4rem;
+      font-size: 2.25rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+    h2 {
+      margin: 0 0 0.6rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    p { margin: 0 0 0.9rem; }
+    a { color: var(--green); }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 1.1rem;
+      padding: 1.25rem 1.3rem 0.5rem;
+      margin-top: 1rem;
+    }
+    footer {
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" role="img" aria-label="Flockbook"></div>
+    <h1>Flockbook</h1>
+    <p>A flock book that stays on your phone.</p>
+
+    <section id="support">
+      <h2>Support</h2>
+      <p>Questions about the app, a lost phone, or the copy saved with your account can come to <a href="mailto:cade.moorman@gmail.com">cade.moorman@gmail.com</a>.</p>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy</h2>
+      <p>The book is stored on the phone. That includes birds, eggs, reminders, care records, and photos. Flockbook does not track you, show ads, or sell this information.</p>
+      <p>Sign-in is optional. If you sign in with Apple, Google, or Facebook, Flockbook receives the name and email from that account. Signing in does not send the book. The book, including photos, is sent only when you choose to sync, and it is kept for that account so another phone can ask for it back.</p>
+      <p>Portraits use the camera or your photo library. Reminders can ask to send alerts. Those alerts stay on the phone.</p>
+      <p>Deleting the app deletes the book on that phone. To delete the account and the book saved with it, email <a href="mailto:cade.moorman@gmail.com">cade.moorman@gmail.com</a>.</p>
+    </section>
+
+    <footer>Updated November 2, 2026.</footer>
+  </main>
+</body>
+</html>
